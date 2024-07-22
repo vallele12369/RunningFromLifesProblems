@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://clw0cfxbkydd0"]
+
+[ext_resource type="Texture2D" uid="uid://i7xirsrcwh1t" path="res://background art/New Piskel (21).png" id="1_cc0ie"]
+[ext_resource type="Texture2D" uid="uid://txgtbbewcfux" path="res://background art/New Piskel (22).png" id="2_hx45x"]
+[ext_resource type="Texture2D" uid="uid://bm4gf1psnnr31" path="res://background art/New Piskel (23).png" id="3_c8bal"]
+[ext_resource type="Texture2D" uid="uid://djxp1jgvslamx" path="res://background art/New Piskel (27).png" id="4_aybno"]
+[ext_resource type="Texture2D" uid="uid://cui3ynbekw16h" path="res://background art/New Piskel (28).png" id="5_h2swt"]
+
+[node name="bg" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cc0ie")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("2_hx45x")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+texture = ExtResource("3_c8bal")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+texture = ExtResource("4_aybno")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+texture = ExtResource("5_h2swt")
+centered = false
